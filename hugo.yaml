@@ -1,0 +1,86 @@
+baseURL: "https://examplesite.com/"
+title: KoPa Dev
+defaultContentLanguage: ru
+languageCode: ru-RU
+paginate: 5
+theme: PaperMod
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+params:
+  env: production # to enable google analytics, opengraph, twitter-cards and schema.
+  title: KoPa Dev
+  description: "ExampleSite description"
+  keywords: [Blog, Golang]
+  author: Kopa
+  images: ["<link or path of image for opengraph, twitter-cards>"]
+  DateFormat: "January 2, 2006"
+  defaultTheme: dark # dark, light
+  disableThemeToggle: true
+
+  ShowReadingTime: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  UseHugoToc: true
+  showtoc: true
+  tocopen: true
+
+  disableSearch: false
+  mainSections: ["posts"]
+
+  label:
+    text: "Главная"
+
+  homeInfoParams:
+    Title: "[kopa]dev"
+    Content: "❯ Технические заметки инженера-программиста"
+
+  socialIcons:
+    - name: leetcode
+      url: "https://leetcode.com/u/user4840t/"
+    - name: linkedin
+      url: "https://www.linkedin.com/in/pavel--kozlov/"
+    - name: github
+      url: "https://github.com/pavelkozlov"
+
+  # for search
+  # https://fusejs.io/api/options.html
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    threshold: 0.4
+    distance: 1000
+    minMatchCharLength: 0
+    keys: [ "title", "permalink", "summary", "content" ]
+
+menu:
+  main:
+    - identifier: categories
+      name: Категории
+      url: /categories/
+      weight: 10
+    - identifier: posts
+      name: Посты
+      url: /posts/
+      weight: 30
+    - identifier: search
+      name: Поиск
+      url: /search/
+      weight: 40
+
+# Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
+pygmentsUseClasses: true
