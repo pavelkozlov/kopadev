@@ -5,6 +5,11 @@ languageCode: ru-RU
 paginate: 5
 theme: PaperMod
 
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
 outputs:
   home:
     - HTML
