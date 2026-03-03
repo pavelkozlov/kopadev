@@ -130,6 +130,17 @@ whisper video.mp4 --language Russian --model turbo --output_dir . --output_forma
 whisper video.mp4 --language Russian --model large --task translate --output_dir . --output_format txt
 ```
 
+```
+I have so much in my knowledge that I have been living on trillions and trillions of such planets for hundreds of billions of years.
+Do you understand how this Earth is? This world is absolutely clear to me.
+I am looking for only one here. Peace, peace and harmony.
+From merging with the infinite eternal.
+```
+
+![img_9.png](img_9.png)
+
+Очень бодро!
+
 ## Нагрузим посерьезнее
 
 ![img_7.png](img_7.png)
